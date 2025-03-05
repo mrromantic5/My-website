@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<! ROMANTIC TECH>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
