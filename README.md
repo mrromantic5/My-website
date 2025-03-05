@@ -1,4 +1,4 @@
-ROMANTIC TECH
+MR.ROMANTIC 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,9 +28,10 @@ ROMANTIC TECH
             100% { background-position: right; }
         }
 
-        /* Flexbox for Horizontal Alignment */
+        /* Centered Container */
         .container {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             background: rgba(255, 255, 255, 0.9);
@@ -38,6 +39,8 @@ ROMANTIC TECH
             border-radius: 15px;
             box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.2);
             animation: fadeIn 1.5s ease-in-out;
+            width: 90%;
+            max-width: 500px;
         }
 
         @keyframes fadeIn {
@@ -50,15 +53,11 @@ ROMANTIC TECH
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            margin-right: 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 255, 0.3);
+            margin-bottom: 15px;
         }
 
         /* Text Styling */
-        .text {
-            text-align: left;
-        }
-
         .text h1 {
             margin: 0;
             font-size: 24px;
@@ -90,23 +89,11 @@ ROMANTIC TECH
             transform: scale(1.05);
             box-shadow: 0px 6px 15px rgba(0, 0, 255, 0.5);
         }
-
-        /* Responsive for Small Screens */
-        @media (max-width: 600px) {
-            .container {
-                flex-direction: column;
-                text-align: center;
-                padding: 20px;
-            }
-            .logo {
-                margin: 0 0 10px;
-            }
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="A_modern_and_professional_tech_logo_for_'ROMANTIC_.png" alt="ROMANTIC TECH Logo" class="logo"> 
+        <img src="logo.png" alt="ROMANTIC TECH Logo" class="logo"> 
         <div class="text">
             <h1>Welcome to ROMANTIC TECH</h1>
             <p>Click the button below to join our WhatsApp channel:</p>
