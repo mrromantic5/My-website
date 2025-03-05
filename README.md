@@ -4,15 +4,26 @@ ROMANTIC TECH
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join My WhatsApp Channel</title>
-    <style/* Full Page Background Animation */
-body {
-    animation: backgroundAnimation 5s infinite alternate;
+<.animated-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    animation: buttonAnimation 3s infinite alternate;
 }
+
+@keyframes buttonAnimation {
+    0% { background-color: red; }  
+    50% { background-color: orange; }  
+    100% { background-color: yellow; }  
+}
+body{animation:backgroundAnimation 5s infinite alternate;}
 
 @keyframes backgroundAnimation {
     0% { background-color: #000; } /* Black */
     100% { background-color: #3498db; } /* Blue */
-}
+}>
 
 /* Section Background Animation */
 .animated-section {
