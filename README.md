@@ -7,7 +7,7 @@ ROMANTIC TECH
     <link rel="icon" href="favicon.png" type="image/png">
     
     <style>
-        /* Full Page Animated Gradient Background */
+        /* Smooth Animated Background */
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
@@ -17,10 +17,10 @@ ROMANTIC TECH
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(45deg, #000428, #004e92);
+            background: linear-gradient(45deg, #ffffff, #87CEFA);
             background-size: 300% 300%;
-            animation: backgroundAnimation 10s infinite alternate;
-            color: white;
+            animation: backgroundAnimation 8s infinite alternate;
+            color: #222;
         }
 
         @keyframes backgroundAnimation {
@@ -28,14 +28,15 @@ ROMANTIC TECH
             100% { background-position: right; }
         }
 
-        /* Styled Container */
+        /* Flexbox for Horizontal Alignment */
         .container {
-            background: rgba(0, 0, 0, 0.85);
-            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
             border-radius: 15px;
-            width: 90%;
-            max-width: 400px;
-            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.2);
             animation: fadeIn 1.5s ease-in-out;
         }
 
@@ -44,53 +45,73 @@ ROMANTIC TECH
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Animated Button */
+        /* Logo Styling */
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 255, 0.3);
+        }
+
+        /* Text Styling */
+        .text {
+            text-align: left;
+        }
+
+        .text h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #004080;
+        }
+
+        .text p {
+            margin: 5px 0 10px;
+            color: #222;
+        }
+
+        /* Modern Button */
         .button {
             display: inline-block;
-            padding: 15px 25px;
+            padding: 12px 20px;
             font-size: 18px;
             font-weight: bold;
             text-transform: uppercase;
             color: white;
-            background: linear-gradient(90deg, #0f9b0f, #00c853);
+            background: linear-gradient(90deg, #007BFF, #00BFFF);
             border-radius: 8px;
             text-decoration: none;
             transition: all 0.4s ease-in-out;
-            box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.3);
-            display: block;
-            margin: 20px auto 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 255, 0.3);
         }
 
         .button:hover {
-            background: linear-gradient(90deg, #00c853, #0f9b0f);
+            background: linear-gradient(90deg, #00BFFF, #007BFF);
             transform: scale(1.05);
-            box-shadow: 0px 6px 15px rgba(0, 255, 0, 0.5);
+            box-shadow: 0px 6px 15px rgba(0, 0, 255, 0.5);
         }
 
-        /* Logo */
-        img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
-        }
-
-        /* Responsive */
-        @media (max-width: 500px) {
+        /* Responsive for Small Screens */
+        @media (max-width: 600px) {
             .container {
-                width: 90%;
+                flex-direction: column;
+                text-align: center;
                 padding: 20px;
+            }
+            .logo {
+                margin: 0 0 10px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://via.placeholder.com/100" alt="Logo"> <!-- Replace with your logo.png -->
-        <h1>Welcome to My Website</h1>
-        <p>Click the button below to join my WhatsApp channel:</p>
-        <a href="https://whatsapp.com/channel/0029VaYvyvZ11ulN0pNKHX1u" class="button">Join Now</a>
+        <img src="A_modern_and_professional_tech_logo_for_'ROMANTIC_.png" alt="ROMANTIC TECH Logo" class="logo"> 
+        <div class="text">
+            <h1>Welcome to ROMANTIC TECH</h1>
+            <p>Click the button below to join our WhatsApp channel:</p>
+            <a href="https://whatsapp.com/channel/0029VaYvyvZ11ulN0pNKHX1u" class="button">Join Now</a>
+        </div>
     </div>
 </body>
 </html>
